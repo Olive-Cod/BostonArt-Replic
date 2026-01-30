@@ -1,0 +1,74 @@
+/* RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+}
+
+.navbar {
+    background-color: white;
+    position: relative;
+    z-index: 10;
+}
+
+/* LOGO */
+.logo img {
+    height: 40px;
+}
+
+/* MENÚ */
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    font-size: 17px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO with Backgroung img*/
+.hero {
+    height: 600px;
+    width: 100%;
+    
+    background-image: url("img/Gallery_02.2.webp");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    /* ellipse */
+    clip-path: ellipse(100% 85% at 50% 0%);
+}
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.35); 
+}
+
+/* TEXT */
+.hero h1 {
+    position: relative;
+    color: white;
+    font-size: 116.9px;
+    font-weight: bold;
+    text-align: center;
+}
